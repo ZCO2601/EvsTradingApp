@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts 'Destroying all potato prices'
+PotatoPrice.destroy_all
+
+PotatoPrice.create(time: "2022-08-22T09:00:00.000Z", value: 100.25)
+PotatoPrice.create(time: "2022-08-22T09:00:01.800Z", value: 100.29)
+PotatoPrice.create(time: "2022-08-22T09:00:02.000Z", value: 100.29)
+PotatoPrice.create(time: "2022-08-22T09:00:03.800Z", value: 100.29)
+PotatoPrice.create(time: "2022-08-22T09:00:04.000Z", value: 100.29)
+PotatoPrice.create(time: "2022-08-22T09:00:05.800Z", value: 100.29)
+
+puts 'Potato prices created'
